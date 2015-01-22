@@ -31,7 +31,7 @@ function requireAPI(filename) {
       var endpointPath = path.join(__dirname, filename, path.basename(version));
       var Endpoint = require(endpointPath);
       var ep = new Endpoint(options);
-      ep.google = this; // for drive.google.transporter
+      ep.nationbuilder = this; // for nationbuilder.transporter
       return Object.freeze(ep); // create new & freeze
     } catch (e) {
       throw new Error(util.format('Unable to load endpoint %s("%s"): %s',

@@ -1,6 +1,6 @@
 {
   "name": "nationbuilder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An unofficial javascript implementation of the NationBuilder API",
   "main": "lib/nationbuilderapis",
   "scripts": {

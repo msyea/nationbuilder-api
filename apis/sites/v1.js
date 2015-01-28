@@ -1,31 +1,31 @@
 var Api = require('../../lib/api'),
-  createAPIRequest = require('../../lib/apirequest');
+	createAPIRequest = require('../../lib/apirequest');
 var util = require('util');
 
 function Sites(options) {
-  People.super_.call(this);
-  var self = this;
-  this._options = options || {};
-  /**
-   * people.list
-   * @param  {object}   params   Parameters for the request
-   * @param  {callback} callback The callback that handles the response
-   * @return {object}            Request object
-   */
-  this.list = function(params, callback) {
-    var parameters = {
-      options: {
-        url: 'https://{slug}.nationbuilder.com/api/v1/sites',
-        method: 'GET'
-      },
-      params: params,
-      requiredParams: ['slug'],
-      pathParams: ['slug'],
-      context: self
-    };
+	Sites.super_.call(this);
+	var self = this;
+	this._options = options || {};
+	/**
+	 * people.list
+	 * @param  {object}   params   Parameters for the request
+	 * @param  {callback} callback The callback that handles the response
+	 * @return {object}            Request object
+	 */
+	this.list = function(params, callback) {
+		var parameters = {
+			options: {
+				url: 'https://{slug}.nationbuilder.com/api/v1/sites',
+				method: 'GET'
+			},
+			params: params,
+			requiredParams: ['slug'],
+			pathParams: ['slug'],
+			context: self
+		};
 
-    return createAPIRequest(parameters, callback);
-  };
+		return createAPIRequest(parameters, callback);
+	};
 }
 
 /**

@@ -46,6 +46,7 @@ function requireAPI(filename) {
    * @private
    */
 var APIs = {
+  'basicPages': requireAPI('basicPages'),
   'lists': requireAPI('lists'),
   'people': requireAPI('people'),
   'sites': requireAPI('sites')

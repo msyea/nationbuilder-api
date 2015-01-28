@@ -8,7 +8,7 @@ function Lists(options) {
   var self = this;
   this._options = options || {};
   /**
-   * people.list
+   * lists.list
    * @param  {object}   params   Parameters for the request
    * @param  {callback} callback The callback that handles the response
    * @return {object}            Request object

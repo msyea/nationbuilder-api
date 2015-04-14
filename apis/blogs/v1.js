@@ -16,7 +16,7 @@ function Blogs(options) {
   this.list = function(params, callback) {
     var parameters = {
       options: {
-        url: 'https://{slug}.nationbuilder.com/api/v1/sites/:site_slug/pages/blogs',
+        url: 'https://{slug}.nationbuilder.com/api/v1/sites/{site_slug}/pages/blogs',
         method: 'GET'
       },
       params: params,
@@ -31,7 +31,7 @@ function Blogs(options) {
   this.show = function(params, callback) {
     var parameters = {
       options: {
-        url: 'https://{slug}.nationbuilder.com/api/v1/sites/:site_slug/pages/blogs/:id',
+        url: 'https://{slug}.nationbuilder.com/api/v1/sites/{site_slug}/pages/blogs/:id',
         method: 'GET'
       },
       params: params,

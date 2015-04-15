@@ -48,6 +48,8 @@ function requireAPI(filename) {
 var APIs = {
   'basicPages': requireAPI('basicPages'),
   'blogs': requireAPI('blogs'),
+  'blogPosts': requireAPI('blogPosts'),
+  'calendars': requireAPI('calendars'),
   'events': requireAPI('events'),
   'lists': requireAPI('lists'),
   'people': requireAPI('people'),
